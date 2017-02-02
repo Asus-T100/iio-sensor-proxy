@@ -65,7 +65,7 @@ apply_mount_matrix (const AccelVec3  vecs[3],
 	_z = accel->x * vecs[2].x + accel->y * vecs[2].y + accel->z * vecs[2].z;
 
 	accel->x = _x;
-	accel->y = _y;
+	accel->y = -_y;
 	accel->z = _z;
 
 	return TRUE;
